@@ -16,7 +16,7 @@ class Calculator
     if value > 1
       Success(value + 3)
     else
-      Failure('value was less than 1')
+      Failure(:less_than_one)
     end
   end
 
@@ -24,7 +24,7 @@ class Calculator
     if value.even?
       Success(value * 2)
     else
-      Failure('value was not even')
+      Failure(:not_even)
     end
   end
 end
